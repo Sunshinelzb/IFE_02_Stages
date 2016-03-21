@@ -1,4 +1,5 @@
 **面向人群：**零基础或初学者
+
 **难度：**简单
 重要说明
 -----
@@ -35,5 +36,6 @@
 
 在线学习参考资料
 --------
-[JavaScript入门篇](http://www.imooc.com/view/36)
-[MDN JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
+* [JavaScript入门篇](http://www.imooc.com/view/36)
+
+* [MDN JavaScript](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript)
