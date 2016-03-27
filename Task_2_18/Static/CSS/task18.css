@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/**
+ *
+ * @authors Your Name (you@example.org)
+ * @date    2016-03-27 10:25:13
+ * @version $Id$
+ */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 50px;
+}
+.ipt {
+    width: 250px;
+    height: 50px;
+    font: inherit;
+    border:1px solid #357ebd;
+    -webkit-box-shadow: 3px 3px 3px #357ebd;
+    box-shadow: 3px 3px 3px #357ebd;
+    border-radius: 5px;
+}
+input[type=button] {
+    width: 80px;
+    height: 50px;
+    background: #357ebd;
+    text-align: center;
+    color: #fff;
+    font-family: '微软雅黑';
+    border-radius: 3px;
+    border: 1px solid #357ebd;
+}
+ul {
+    list-style: none;
+}
+.show-num{
+    display: inline-block;
+    text-align: center;
+    height:40px;
+    line-height: 40px;
+    width: 80px;
+    background-color: #357ebd;
+    color: #FFF;
+    margin: 5px;
+    border: 1px solid #357ebd;
+    border-radius: 10%;
+    font-family: '微软雅黑';
+    font-size: 20px;
+    cursor: pointer;
+}
