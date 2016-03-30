@@ -8,6 +8,14 @@
 function $(id) {
     return document.getElementById(id);
 }
+
+function stopBubble(e) {
+    if (e && e.stopPropagation)
+        e.stopPropagation();
+    else
+        window.event.cancelBubble = true;
+}
+
 var input = $('input-num'),
     leftIn = $('left-in'),
     leftOut = $('left-out'),
@@ -170,14 +178,21 @@ window.onload = function() {
         complete = false;
         count = 0;
     });
+
+    function getTarget(event) {
+        event = event || window.event;
+        return event.target || event.srcElement;
+    };
     /*  事件代理，点击消除  */
-        addEvent(dataNum, 'click', function(e) {
-            var oEvent = e || window.event;
-            alert("您删除的数据是 " + oEvent.target.firstChild.innerHTML + "~");
-            oEvent.cancelBuble = false;
-            oEvent.stopPropagation();
-            dataNum.removeChild(oEvent.target);
-        }, false);
+    addEvent(dataNum, 'click', function deleteEle(event) {
+        var oldEle = getTarget(event),
+            queue = document.querySelector("ul");
+        if (oldEle.tagName == "LI") {
+            alert("您删除的数据是：" + oldEle.firstChild.innerHTML + "~");
+            queue.removeChild(oldEle);
+            count--;
+        }
+    });
     addEvent(sort, "click", function() {
         if (!complete) {
             if (arrLi[0]) {
