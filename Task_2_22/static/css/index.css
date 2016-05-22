@@ -3,7 +3,7 @@
  *
  * @authors Sunshine  625592890@qq.com
  * @date    2016-05-22 10:51:21
- * @hello 	hello world
+ * @hello   hello world
  * @version $Id$
  */
 
@@ -11,7 +11,17 @@
 {
     font-family: 'Microsoft YaHei UI', sans-serif;
 }
-.root,.son_1,.son_2,.son_3
+html
+{
+    background: -webkit-linear-gradient(top,#ff0 0%,#3f9 80%);
+    background:    -moz-linear-gradient(top,#ff0 0%,#3f9 80%);
+    background:      -o-linear-gradient(top,#ff0 0%,#3f9 80%);
+    background:         linear-gradient(top,#ff0 0%,#3f9 80%);
+}
+.root,
+.son_1,
+.son_2,
+.son_3
 {
     display: flex;
 
@@ -75,12 +85,12 @@ button
     border: none;
     border-radius: 20px;
     outline: none;
-    background: #66C6B0;
+    background: #66c6b0;
 }
 button:hover
 {
     cursor: pointer;
 
     color: #000;
-    background: #63D5E8;
+    background: #63d5e8;
 }

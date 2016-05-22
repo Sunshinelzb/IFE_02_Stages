@@ -23,7 +23,7 @@ var preOrder = $("preOrder"),
 function show() {
     head = traversalResult.shift(); // 出队
     if (head) {
-        head.style.backgroundColor = "rgba(7,244,3,0.87)";
+        head.style.backgroundColor = "rgba(247, 139, 184, 0.77)";
         timer = setTimeout(function() {
             head.style.backgroundColor = "#fff"; //1秒后节点的蓝色变为白色
             show(); //递归调用show，使要显示的节点不停出队显示，直至为空
