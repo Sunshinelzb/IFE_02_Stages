@@ -1,0 +1,121 @@
+@charset 'UTF-8';
+
+/**
+ *
+ * @authors Sunshine  625592890@qq.com
+ * @date    2016-07-01 12:51:21
+ * @hello   hello world
+ * @version $Id$
+ */
+* {
+	font-family: "Microsoft YaHei UI", sans-serif;
+	font-size: 10px;
+}
+div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid;
+	background-color: #fff;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	border-radius: 10px;
+}
+.one {
+
+	width: 1500px;
+	height: 400px;
+	margin: 20px auto;
+	border-color: fuchsia;
+}
+.two {
+	border-color: yellowgreen;
+	height: 350px;
+}
+.Apple {
+	width: 780px;
+}
+.Orange {
+	width: 600px;
+}
+.Fish {
+	width: 30px;
+}
+.three {
+	border-color: deepskyblue;
+	height: 300px;
+}
+.Cow {
+	width: 370px;
+}
+.Phone {
+	width: 40px;
+}
+.Music {
+	width: 200px;
+}
+.Human {
+	width: 300px;
+}
+.Woman {
+	width: 200px;
+}
+.four {
+	border-color: orange;
+	height: 250px;
+}
+.Yellow {
+	width: 40px;
+}
+.Blue {
+	width: 200px;
+}
+.Book {
+	width: 50px;
+}
+.School {
+	width: 80px;
+}
+.Shop {
+	width: 80px;
+}
+.Glass {
+	width: 50px;
+}
+.Code, .Man, .Sport {
+	width: 70px;
+}
+.five {
+	border-color: black;
+	height: 200px;
+}
+#choose {
+	text-align: center;
+	border-radius: 20px;
+	border-color: black;
+	width: 50%;
+	margin: 0 auto;
+}
+fieldset button {
+	margin: 20px;
+	outline: none;
+	border: none;
+	height: 50px;
+	border-radius: 20px;
+	border-color: black;
+	background-color: black;
+	color: white;
+	-webkit-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+fieldset button:hover {
+	cursor: pointer;
+	background-color: gray;
+	color: orangered;
+}
+body {
+	background-image: url();
+	background-size: 100%;
+}
